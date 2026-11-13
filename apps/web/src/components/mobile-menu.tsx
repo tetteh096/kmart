@@ -119,8 +119,8 @@ export function MobileMenu({
               {/* Two picture tiles into the shop */}
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { food: false, title: "Home & Kitchen", text: "Storage, coolers, plates", src: "/images/tile-storage.jpg" },
-                  { food: true, title: "All groceries", text: "Pantry, drinks, household", src: "/images/store-aisle.jpg" },
+                  { food: false, title: "Home & Kitchen", text: "Storage, coolers, plates", src: "/images/tile-containers.jpg" },
+                  { food: true, title: "All groceries", text: "Pantry, drinks, household", src: "/images/shop-aisle.jpg" },
                 ].map((tile) => (
                   <button
                     key={tile.title}

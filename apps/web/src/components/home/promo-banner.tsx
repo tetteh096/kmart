@@ -10,27 +10,27 @@ import { formatGHS } from "@/components/shop/money";
 
 const SLIDES = [
   {
-    image: "/images/hero-fresh.jpg",
-    alt: "A shopper choosing fresh oranges in a supermarket",
-    focus: "70% center",
+    image: "/images/hero-shopper.jpg",
+    alt: "A smiling shopper with a basket among shelves of packaged groceries",
+    focus: "62% center",
     kicker: "Groceries & more",
     title: "Your weekly shop, without the queue",
     text: "Drinks, pantry staples, household essentials and homeware from Kmart, packed and ready for you.",
     cta: { label: "Start shopping", href: "/menu" },
   },
   {
-    image: "/images/hero-produce.jpg",
-    alt: "Tomatoes, green beans, peppers and greens at a market",
-    focus: "50% center",
+    image: "/images/hero-pantry.jpg",
+    alt: "Stacked tins and packs of pasta and bread",
+    focus: "60% center",
     kicker: "Kitchen staples",
     title: "Everything for jollof night",
-    text: "Rice, oil, tomato paste, pepper and onions: the whole list in one basket.",
+    text: "Rice, oil, tomato paste, tinned fish and pasta: the whole list in one basket.",
     cta: { label: "Shop the pantry", href: "/menu" },
   },
   {
-    image: "/images/hero-delivery.jpg",
-    alt: "A smiling delivery rider holding a box of fresh groceries",
-    focus: "40% 30%",
+    image: "/images/hero-courier.jpg",
+    alt: "A smiling delivery man handing over parcels at a gate",
+    focus: "55% 35%",
     kicker: "Delivery around Adenta",
     title: `Free delivery over ${formatGHS(FREE_DELIVERY_THRESHOLD)}`,
     text: "Order online and we bring it to your door, or pick it up at your nearest Kmart.",
@@ -131,8 +131,8 @@ export function PromoBanner() {
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-4">
-        <SideOffer image="/images/tile-storage.jpg" title="Home & Kitchen" text="Storage, plates, coolers and more" href="/menu" tone="bg-leaf" />
-        <SideOffer image="/images/tile-grains.jpg" title="Pantry staples" text="Rice, oil, tomato paste and more" href="/menu" tone="bg-brand" />
+        <SideOffer image="/images/tile-containers.jpg" title="Home & Kitchen" text="Storage, plates, coolers and more" href="/menu" tone="bg-leaf" />
+        <SideOffer image="/images/tile-pantry.jpg" title="Pantry staples" text="Rice, oil, tomato paste and more" href="/menu" tone="bg-brand" />
       </div>
     </section>
   );

@@ -14,8 +14,7 @@ export type FoodCategoryId =
   | "home"
   | "personal"
   | "baby"
-  | "bakery"
-  | "produce";
+  | "bakery";
 export type CategoryId = DrinkCategoryId | FoodCategoryId;
 export type MenuKind = "drink" | "food";
 
@@ -76,7 +75,6 @@ export const CATEGORIES: Category[] = [
   { id: "personal", kind: "food", name: "Personal Care", blurb: "Soap, toothpaste and lotion" },
   { id: "baby", kind: "food", name: "Baby", blurb: "Diapers, wipes and baby food" },
   { id: "bakery", kind: "food", name: "Bread", blurb: "Sliced and tea bread" },
-  { id: "produce", kind: "food", name: "Kitchen Basics", blurb: "Tomatoes, onions, pepper and plantain" },
 ];
 
 export const SIZES: { id: SizeId; name: string; extra: number }[] = [
@@ -167,10 +165,6 @@ export const FOOD_ITEMS: Product[] = [
   { id: "baby-cereal", kind: "food", name: "Baby Cereal", category: "baby", price: 55, notes: "400 g, from 6 months", description: "Baby Cereal, 400 g, from 6 months.", caffeine: "None", color: "#F2D9A6", canBeHot: false, inStock: true },
   { id: "sliced-bread", kind: "food", name: "Sliced Bread", category: "bakery", price: 20, notes: "Large loaf", description: "Sliced Bread, large loaf.", caffeine: "None", color: "#E2B072", canBeHot: false, inStock: true },
   { id: "tea-bread", kind: "food", name: "Tea Bread", category: "bakery", price: 15, notes: "Soft and sweet", description: "Tea Bread, soft and sweet.", caffeine: "None", color: "#E8BE7E", canBeHot: false, inStock: true },
-  { id: "tomatoes-1kg", kind: "food", name: "Fresh Tomatoes", category: "produce", price: 25, notes: "1 kg", description: "Fresh Tomatoes, 1 kg.", caffeine: "None", color: "#E8523F", canBeHot: false, inStock: true },
-  { id: "onions-1kg", kind: "food", name: "Red Onions", category: "produce", price: 18, notes: "1 kg", description: "Red Onions, 1 kg.", caffeine: "None", color: "#B0476A", canBeHot: false, inStock: true },
-  { id: "pepper-500g", kind: "food", name: "Fresh Pepper", category: "produce", price: 12, notes: "500 g, scotch bonnet", description: "Fresh Pepper, 500 g, scotch bonnet.", caffeine: "None", color: "#E2382B", canBeHot: false, inStock: true },
-  { id: "plantain-bunch", kind: "food", name: "Plantain", category: "produce", price: 30, notes: "Bunch of 4", description: "Plantain, bunch of 4.", caffeine: "None", color: "#E9C04A", canBeHot: false, inStock: true },
 ];
 
 /** Everything on the menu, drinks first. */

@@ -52,7 +52,7 @@ export default function ContactPage() {
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Contact" }]} />
         <div className="mt-5 relative overflow-hidden rounded-[32px] bg-brand-deep text-cream">
           <div className="absolute inset-0">
-            <Image src="/images/store-aisle.jpg" alt="" fill priority sizes="(min-width: 1280px) 1216px, 100vw" className="object-cover object-[70%_center]" />
+            <Image src="/images/shop-aisle.jpg" alt="" fill priority sizes="(min-width: 1280px) 1216px, 100vw" className="object-cover object-[70%_center]" />
             <div className="absolute inset-0 bg-gradient-to-r from-brand-deep via-brand-deep/90 md:via-brand-deep/60 to-transparent" />
           </div>
           <div className="relative px-6 sm:px-12 py-12 sm:py-16 max-w-[620px] flex flex-col gap-6">

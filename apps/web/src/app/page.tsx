@@ -16,7 +16,6 @@ import { formatGHS } from "@/components/shop/money";
 import { useBranch } from "@/components/branch";
 
 const AISLE_ICONS: Record<string, { icon: LucideIcon; bg: string }> = {
-  produce: { icon: Apple, bg: "#E5F3E1" },
   pantry: { icon: Wheat, bg: "#FBEFD9" },
   drinks: { icon: CupSoda, bg: "#E1F0FA" },
   dairy: { icon: Milk, bg: "#EEF2F6" },
@@ -116,7 +115,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="relative min-h-[220px]">
-            <Image src="/images/story-trolley.jpg" alt="A smiling shopper pushing a trolley full of groceries" fill sizes="(min-width: 768px) 45vw, 100vw" className="object-cover object-[45%_center]" />
+            <Image src="/images/story-shopper.jpg" alt="A smiling shopper choosing a packaged product in a supermarket aisle" fill sizes="(min-width: 768px) 45vw, 100vw" className="object-cover object-[35%_center]" />
             <span aria-hidden className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-brand via-brand/10 to-transparent" />
           </div>
         </div>
@@ -204,7 +203,7 @@ export default function HomePage() {
           </a>
         </div>
         <div className="mt-5 grid grid-cols-2 md:grid-cols-4 gap-3">
-          {["/images/kmart-storefront.jpg", "/images/vibes-shelf.jpg", "/images/tile-storage.jpg", "/images/tile-tomatoes.jpg"].map((src) => (
+          {["/images/kmart-storefront.jpg", "/images/tile-cans-aisle.jpg", "/images/tile-containers.jpg", "/images/tile-sardines.jpg"].map((src) => (
             <a key={src} href={SHOP.instagram} target="_blank" rel="noreferrer" className="relative aspect-square rounded-2xl overflow-hidden group">
               <Image src={src} alt="" fill sizes="(min-width: 768px) 25vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
             </a>

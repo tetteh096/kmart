@@ -126,7 +126,6 @@ export function ProductArt({
 }
 
 const AISLE_ICONS: Record<string, LucideIcon> = {
-  produce: Apple,
   pantry: Wheat,
   drinks: CupSoda,
   dairy: Milk,
