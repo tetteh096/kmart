@@ -1,0 +1,103 @@
+@import "@kmartshop/ui/globals.css";
+
+/* Kmart palette, from the logo: Kmart red, shopping-cart yellow, warm white and charcoal. */
+:root {
+  --background: #fffdf9;
+  --foreground: #1e1a18;
+  --card: #ffffff;
+  --card-foreground: #1e1a18;
+  --popover: #ffffff;
+  --popover-foreground: #1e1a18;
+  --primary: #d42018;
+  --primary-foreground: #ffffff;
+  --secondary: #fff3e6;
+  --secondary-foreground: #1e1a18;
+  --muted: #fff3e6;
+  --muted-foreground: #66605b;
+  --accent: #ffb81c;
+  --accent-foreground: #1e1a18;
+  --border: #f0e2d2;
+  --input: #f0e2d2;
+  --ring: #d42018;
+  --radius: 0.75rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter-tight), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: var(--font-brand), var(--font-inter-tight), sans-serif;
+
+  /* Kmart red: primary buttons and active states (5.3:1 under white). */
+  --color-brand: #d42018;
+  --color-brand-dark: #ad1912;
+  /* Charcoal with a little warmth: dark grounds, footer, overlays. */
+  --color-brand-deep: #231817;
+  --color-night: #160e0d;
+  --color-ink: #1e1a18;
+  --color-subtle: #66605b;
+  /* Cart yellow: badges, the round "+" buttons and highlights. Always under dark text. */
+  --color-gold: #ffb81c;
+  --color-gold-dark: #8a5a00;
+  --color-gold-soft: #fff1cc;
+  --color-tint: #fff3e6;
+  --color-tint-strong: #ffe6c7;
+  --color-sale: #c41d15;
+  --color-paper: #fffdf9;
+  --color-card: #ffffff;
+  --color-line: #f0e2d2;
+  --color-leaf: #2f7d3a;
+  /* The loud colour for calls to action. */
+  --color-tomato: #d42018;
+  --color-tomato-dark: #ad1912;
+  --color-tomato-soft: #fde0dd;
+  --color-cream: #fffdf9;
+
+  /* Kept so older class names still land on the new palette. */
+  --color-butter: #fffdf9;
+  --color-butter-deep: #fff3e6;
+  --color-butter-soft: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply selection:bg-brand selection:text-cream;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
+
+/* iPhones zoom the whole page when a field under 16px is focused, then pan around
+   while typing, which feels like the layout shaking. */
+@media (max-width: 767px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+/* Nothing should ever make the page pan sideways on a phone. On <html> this applies to the
+   viewport (so the sticky header keeps working); overscroll stops the sideways bounce. */
+html {
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+body {
+  overflow-x: clip;
+}

@@ -1,0 +1,6 @@
+{
+  "extends": "@kmartshop/config/tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true
+  }
+}

@@ -1,0 +1,3 @@
+{
+  "extends": "@kmartshop/config/tsconfig.base.json"
+}
